@@ -1,7 +1,7 @@
 defmodule Turbo.HTML.MixProject do
   use Mix.Project
 
-  @version "0.1.2"
+  @version "0.1.3"
   @github "https://github.com/zven21/turbo_html"
 
   def project do
