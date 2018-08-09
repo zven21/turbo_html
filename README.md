@@ -1,6 +1,4 @@
-# TurboHtml
-
-**TODO: Add description**
+# Turbo.HTML
 
 ## Installation
 
@@ -10,12 +8,11 @@ by adding `turbo_html` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:turbo_html, "~> 0.1.0"}
+    {:turbo_html, "~> 0.1.3"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/turbo_html](https://hexdocs.pm/turbo_html).
+## Credits
 
+* [scrivener_html](https://github.com/mgwidmann/scrivener_html) - Similar implementation.
