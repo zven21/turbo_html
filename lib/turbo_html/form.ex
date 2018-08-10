@@ -35,7 +35,7 @@ defmodule Turbo.HTML.Form do
     )
   end
 
-  defp do_turbo_search_input(nil, _, field, opts) do
+  defp do_turbo_search_input(_, _, field, opts) do
     content_tag(:input, "",
       name: field,
       class: Keyword.get(opts, :class),
