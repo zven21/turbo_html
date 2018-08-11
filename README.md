@@ -15,4 +15,4 @@ end
 
 ## Credits
 
-* [scrivener_html](https://github.com/mgwidmann/scrivener_html) - Similar implementation.
+* [scrivener_html](https://github.com/mgwidmann/scrivener_html) - Initial inspiration of this project.
