@@ -1,5 +1,13 @@
 defmodule Turbo.HTML.ThemeAdapter do
-  @moduledoc false
+  @moduledoc """
+  Turbo HTML theme adapter.
+
+  ## Example
+
+      iex> use Turbo.HTML.ThemeAdapter
+      Turbo.HTML.ThemeAdapter.Bootstrap
+
+  """
 
   defmacro __using__(_opts) do
     module = theme_adapter()

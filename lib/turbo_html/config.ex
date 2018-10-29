@@ -1,7 +1,7 @@
 defmodule Turbo.HTML.Config do
   @moduledoc false
 
-  def default_theme(application \\ :trubo_html) do
+  def default_theme(application \\ :turbo_html) do
     config(:default_theme, :bootstrap, application)
   end
 
