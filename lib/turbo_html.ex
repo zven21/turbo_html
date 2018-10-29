@@ -3,26 +3,28 @@ defmodule Turbo.HTML do
   Turbo view support.
   """
 
-  alias Turbo.HTML.{Form, Paginate}
+  alias Turbo.HTML.Views.{
+    PaginateView,
+    SearchInputView
+  }
+
+  alias Turbo.HTML.Config, as: TConfig
 
   @doc """
-  paginate View
+  paginate view
   """
-  def turbo_pagination_links(paginator) do
-    Paginate.turbo_pagination_links(paginator)
+  def turbo_pagination_links(conn, paginate, opts \\ []) do
+    PaginateView.pagination_links(conn, paginate, opts)
   end
 
   @doc """
-  decorator paginate params.
+  search input view.
   """
-  def decorator_paginate(conn, paginate) do
-    Map.merge(paginate, %{path_info: conn.path_info, params: conn.params})
+  def turbo_search_input(conn, field, opts \\ []) do
+    SearchInputView.search_input(conn, field, opts)
   end
 
-  @doc """
-  decorator input view.
-  """
-  def turbo_search_input(conn, field, opts) do
-    Form.turbo_search_input(conn, field, opts)
+  def default_theme do
+    TConfig.default_theme()
   end
 end
