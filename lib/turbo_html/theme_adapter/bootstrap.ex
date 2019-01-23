@@ -6,7 +6,7 @@ defmodule Turbo.HTML.ThemeAdapter.Bootstrap do
   defmacro pagination_links(do: expression) do
     quote do
       Phoenix.HTML.Tag.content_tag :nav, "aria-lablel": "..." do
-        Phoenix.HTML.Tag.content_tag :ul, class: "pagination pagination-sm" do
+        Phoenix.HTML.Tag.content_tag :ul, class: "pagination" do
           unquote(expression)
         end
       end
@@ -28,10 +28,7 @@ defmodule Turbo.HTML.ThemeAdapter.Bootstrap do
       Phoenix.HTML.Tag.content_tag :li, class: "page-item active" do
         Phoenix.HTML.Link.link to: unquote(url), class: "page-link" do
           [
-            Phoenix.HTML.html_escape(unquote(text)),
-            Phoenix.HTML.Tag.content_tag :span, class: "sr-only" do
-              "(current)"
-            end
+            Phoenix.HTML.html_escape(unquote(text))
           ]
         end
       end
