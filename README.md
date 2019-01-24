@@ -9,7 +9,7 @@
 
 ## Getting started
 
-`Turbo.HTML` is a [Turbo.Ecto]() at Phoenix framework supported.
+`Turbo.HTML` is a [Turbo.Ecto](https://github.com/zven21/turbo_ecto) at Phoenix framework supported.
 
 ```elixir
 def deps do
@@ -23,7 +23,7 @@ For use with Phoenix.HTML, configure the config/config.exs like the following:
 
 ```elixir
 config :turbo_html, Turbo.HTML,
-  view_style: :semantic
+  view_style: :semantic    # default bootstrap.
 ```
 
 Two methods are provided:
