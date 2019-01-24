@@ -24,7 +24,7 @@ defmodule Turbo.HTML do
     SearchInputView.search_input(conn, field, opts)
   end
 
-  def default_theme do
-    TConfig.default_theme()
+  def view_style do
+    TConfig.view_style()
   end
 end

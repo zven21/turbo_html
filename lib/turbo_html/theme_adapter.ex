@@ -18,7 +18,7 @@ defmodule Turbo.HTML.ThemeAdapter do
   end
 
   def theme_adapter() do
-    (Turbo.HTML.default_theme() || :bootstrap)
+    (Turbo.HTML.view_style() || :bootstrap)
     |> Atom.to_string()
     |> String.capitalize()
     |> (&("Elixir.Turbo.HTML.ThemeAdapter." <> &1)).()

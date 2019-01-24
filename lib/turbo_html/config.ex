@@ -1,8 +1,8 @@
 defmodule Turbo.HTML.Config do
   @moduledoc false
 
-  def default_theme(application \\ :turbo_html) do
-    config(:default_theme, :bootstrap, application)
+  def view_style(application \\ :turbo_html) do
+    config(:view_style, :bootstrap, application)
   end
 
   defp config(application) do
