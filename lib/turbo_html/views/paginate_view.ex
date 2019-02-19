@@ -139,7 +139,7 @@ defmodule Turbo.HTML.Views.PaginateView do
         page_link("#", :disabled, do: label)
 
       false ->
-        page_link(gen_href(conn, current_page + 1), do: label)
+        page_link(gen_href(conn, total_pages), do: label)
     end
   end
 
