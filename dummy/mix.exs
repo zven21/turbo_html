@@ -44,7 +44,7 @@ defmodule Dummy.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:turbo_html, path: "../"},
-      {:turbo_ecto, "~> 0.2.1"}
+      {:turbo_ecto, "~> 0.3"}
     ]
   end
 

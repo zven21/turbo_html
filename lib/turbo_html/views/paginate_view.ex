@@ -5,7 +5,7 @@ defmodule Turbo.HTML.Views.PaginateView do
 
   @default_opts [
     max_page_links: 10,
-    pervious_label: "<<",
+    previous_label: "<<",
     first_label: "First",
     next_label: ">>",
     last_label: "Last"
@@ -34,7 +34,7 @@ defmodule Turbo.HTML.Views.PaginateView do
 
       # iex> conn = %{params: %{}, path_info: ["users"]}
       # iex> paginate = %{current_page: 10, next_page: 11, per_page: 5, prev_page: 9, total_count: 100, total_pages: 20}
-      # iex> default_opts = [max_page_links: 10, pervious_label: "<<", first_label: "First", next_label: ">>", last_label: "Last"]
+      # iex> default_opts = [max_page_links: 10, previous_label: "<<", first_label: "First", next_label: ">>", last_label: "Last"]
       # iex> Turbo.HTML.Views.PaginateView.first_page_link(conn, paginate, default_opts) |> Phoenix.HTML.safe_to_string()
       # "<li class=\"page-item\"><a class=\"page-link\" href=\"/users?page=1\">First</a></li>"
 
@@ -53,7 +53,7 @@ defmodule Turbo.HTML.Views.PaginateView do
   end
 
   def previous_page_link(conn, %{current_page: current_page, prev_page: prev_page}, opts) do
-    label = opts[:pervious_label]
+    label = opts[:previous_label]
 
     case current_page <= 1 do
       true ->
@@ -125,7 +125,7 @@ defmodule Turbo.HTML.Views.PaginateView do
 
       # iex> conn = %{params: %{}, path_info: ["users"]}
       # iex> paginate = %{current_page: 10, next_page: 11, per_page: 5, prev_page: 9, total_count: 100, total_pages: 20}
-      # iex> default_opts = [max_page_links: 10, pervious_label: "<<", first_label: "First", next_label: ">>", last_label: "Last"]
+      # iex> default_opts = [max_page_links: 10, previous_label: "<<", first_label: "First", next_label: ">>", last_label: "Last"]
       # iex> Turbo.HTML.Views.PaginateView.last_page_link(conn, paginate, default_opts) |> Phoenix.HTML.safe_to_string() |> IO.inspect()
       # "<li class=\"page-item\"><a class=\"page-link\" href=\"/users?page=11\">Last</a></li>"
 
