@@ -27,7 +27,7 @@ defmodule Turbo.HTML.MixProject do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:credo, "~> 0.10.0", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.5.2", only: [:dev, :test], runtime: false},
       {:phoenix_html, "~> 2.13"},
       {:plug, "~> 1.7"}
     ]
