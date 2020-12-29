@@ -1,0 +1,9 @@
+#, elixir-format
+#: lib/turbo_html/views/paginate_view.ex:9
+msgid "First"
+msgstr ""
+
+#, elixir-format
+#: lib/turbo_html/views/paginate_view.ex:11
+msgid "Last"
+msgstr ""

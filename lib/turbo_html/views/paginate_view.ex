@@ -1,14 +1,14 @@
 defmodule Turbo.HTML.Views.PaginateView do
   @moduledoc false
-
+  import Turbo.HTML.Gettext
   use Turbo.HTML.ThemeAdapter
 
   @default_opts [
     max_page_links: 10,
     previous_label: "<<",
-    first_label: Turbo.HTML.Gettext.gettext("First"),
+    first_label: gettext("First"),
     next_label: ">>",
-    last_label: Turbo.HTML.Gettext.gettext("Last")
+    last_label: gettext("Last")
   ]
 
   @doc """
