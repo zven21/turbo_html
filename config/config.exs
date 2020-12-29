@@ -31,4 +31,4 @@ use Mix.Config
 #
 
 #config :gettext, :default_locale, "en"
-config :turbo_html, Turbo.HTML.Gettext, default_locale: "en"
+#config :turbo_html, Turbo.HTML.Gettext, default_locale: "en"
