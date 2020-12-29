@@ -6,9 +6,9 @@ defmodule Turbo.HTML.Views.PaginateView do
   @default_opts [
     max_page_links: 10,
     previous_label: "<<",
-    first_label: "First",
+    first_label: Turbo.HTML.Gettext.gettext("First"),
     next_label: ">>",
-    last_label: "Last"
+    last_label: Turbo.HTML.Gettext.gettext("Last")
   ]
 
   @doc """
