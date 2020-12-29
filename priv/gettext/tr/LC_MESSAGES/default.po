@@ -1,0 +1,7 @@
+msgid "First"
+msgstr "İlk"
+
+#, elixir-format
+#: lib/turbo_html/views/paginate_view.ex:11
+msgid "Last"
+msgstr "Son"
