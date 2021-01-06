@@ -17,7 +17,7 @@
 ```elixir
 def deps do
   [
-    {:turbo_html, "~> 0.2.3"}
+    {:turbo_html, "~> 0.3.0"}
   ]
 end
 ```
