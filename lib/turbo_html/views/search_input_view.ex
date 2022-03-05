@@ -21,7 +21,8 @@ defmodule Turbo.HTML.Views.SearchInputView do
       name: field,
       value: value,
       class: Keyword.get(opts, :class),
-      placeholder: Keyword.get(opts, :placeholder)
+      placeholder: Keyword.get(opts, :placeholder),
+      type: Keyword.get(opts, :type, "text")
     )
   end
 
@@ -29,7 +30,8 @@ defmodule Turbo.HTML.Views.SearchInputView do
     content_tag(:input, "",
       name: field,
       class: Keyword.get(opts, :class),
-      placeholder: Keyword.get(opts, :placeholder)
+      placeholder: Keyword.get(opts, :placeholder),
+      type: Keyword.get(opts, :type, "text")
     )
   end
 end
